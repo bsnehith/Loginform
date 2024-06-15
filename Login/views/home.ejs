@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="logo">Logo</a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to My Profile</h1>
+                <p>My name is Baratam Snehith. Iam a Full stack Developer to creating the end to end applications.</p>
+                <button class="cta-btn" onclick="scrollToSection('services')">Get Started</button>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="service-cards">
+                    <div class="card">
+                        <h3>Project 1</h3>
+                        <h2>TODO APP using Mern Stack</h2>
+                        <p>A TODO app is a simple but powerful application to manage tasks, providing functionalities like adding, deleting, and marking tasks as complete. Creating a TODO app using the MERN stack is an excellent way to learn full-stack development. The MERN stack consists of MongoDB, Express.js, React, and Node.js, making it a robust choice for building scalable and maintainable web applications.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Project 2</h3>
+                        <h2>Company Mangement System Using Java</h2>
+                        <p>A Company Management System (CMS) is a software application designed to manage the various operations of a company. This includes managing employee records, tracking project progress, handling payroll, and overseeing other administrative tasks. Building a CMS using Java offers a robust, platform-independent solution due to Java's versatility and wide adoption in enterprise environments</p>
+                    </div>
+                    <div class="card">
+                        <h3>Project 3</h3>
+                        <h2>Contact Mangement App Using Mern Stack</h2>
+                        <p>A Contact Management App is a tool designed to store, organize, and manage a user’s contact information. Utilizing the MERN stack (MongoDB, Express.js, React.js, and Node.js), this application will provide a robust and scalable solution for managing contacts with a modern, user-friendly interface.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>My Name is Baratam Snehith I completed my graduation at gmr institute of technology and iam full stack developer i used the technology like html css javascript react mongodb node js express js tailwind css</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or need further information, feel free to reach out to us.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
